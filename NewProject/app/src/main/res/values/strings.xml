@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">NewProject</string>
+
+    <string-array name="subject">
+        <item>Java</item>
+        <item>C/C++</item>
+        <item>Android</item>
+        <item>IOS</item>
+    </string-array>
+</resources>

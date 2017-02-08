@@ -1,0 +1,75 @@
+apply plugin: 'com.android.application'
+apply plugin: 'com.neenbedankt.android-apt'
+def AAVersion = '4.2.0'
+def AASnapshotVersion = '4.2.0-SNAPSHOT'
+apply plugin: 'realm-android'
+
+android {
+    compileSdkVersion 25
+    buildToolsVersion "25.0.2"
+    defaultConfig {
+        applicationId "dvan.training_project_equiz.bap.equiz"
+        minSdkVersion 13
+        targetSdkVersion 25
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+sourceSets {
+    main {
+        java {
+            srcDir 'src/model'
+            srcDir 'src/response'
+        }
+    }
+}
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+    compile 'com.android.support:appcompat-v7:25.1.0'
+    testCompile 'junit:junit:4.12'
+
+    //annotations
+    apt "org.androidannotations:androidannotations:$AAVersion"
+    compile "org.androidannotations:androidannotations-api:$AAVersion"
+
+    apt "org.androidannotations:androidannotations:$AASnapshotVersion"
+    compile "org.androidannotations:androidannotations-api:$AASnapshotVersion"
+
+    //Stetho
+    compile 'com.facebook.stetho:stetho:1.4.2'
+
+    //retrofit 2.0
+    compile 'com.google.code.gson:gson:2.8.0'
+    compile 'com.squareup.retrofit2:retrofit:2.1.0'
+    compile 'com.squareup.retrofit2:converter-gson:2.1.0'
+
+    //lombok
+    apt "org.projectlombok:lombok:1.16.4"
+    provided 'org.projectlombok:lombok:1.16.4'
+
+    runtime files('libs/lombok.jar')
+    runtime fileTree(dir: 'libs', include: '*.jar')
+}
+
+apt {
+    arguments {
+        // you should set your package name here if you are using different application IDs
+        // resourcePackageName "your.package.name"
+
+        // You can set optional annotation processing options here, like these commented options:
+        // logLevel 'INFO'
+        // logFile '/var/log/aa.log'
+    }
+}

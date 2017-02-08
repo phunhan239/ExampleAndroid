@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">ListView</string>
+
+    <string-array name="language">
+        <item>Java</item>
+        <item>C/C++</item>
+        <item>Android</item>
+        <item>Ios</item>
+    </string-array>
+
+    <integer-array name="icon">
+        <item>@drawable/ic_launcher</item>
+        <item>@drawable/ic_launcher1</item>
+        <item>@drawable/ic_launcher2</item>
+        <item>@drawable/ic_launcher3</item>
+    </integer-array>
+</resources>

@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">Music</string>
+    <string-array name="Songs">
+        <item>Con tim tan vỡ</item>
+        <item>Đi về đâu</item>
+        <item>Lạc Trôi</item>
+        <item>Mình là gì của nhau</item>
+        <item>Phía sau một cô gái</item>
+        <item>Trái tim bên lề</item>
+        <item>Vỡ tan</item>
+        <item>Đừng tin em mạnh mẽ</item>
+    </string-array>
+
+    <string-array name="Singers">
+        <item>Phan Mạnh Quỳnh</item>
+        <item>Tiên Tiên</item>
+        <item>Sơn Tùng M-TP</item>
+        <item>Lou Hoàng</item>
+        <item>Soobin Hoàng Sơn</item>
+        <item>Bằng Kiều</item>
+        <item>Trịnh Thăng Bình</item>
+        <item>Jang mi</item>
+    </string-array>
+
+</resources>

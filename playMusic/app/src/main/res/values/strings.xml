@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">playMusic</string>
+    <string name="gptb1">GPTB1</string>
+
+    <string-array name="province">
+        <item>Ha noi</item>
+        <item>Ha Nam</item>
+        <item>Ha Lam</item>
+        <item>Quang Tri</item>
+        <item>Quang Ngai</item>
+        <item>Quang Nam</item>
+        <item>Quang Binh</item>
+    </string-array>
+</resources>

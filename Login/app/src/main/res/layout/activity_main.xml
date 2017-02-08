@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    tools:context="dvan.example.com.MainActivity">
+
+
+    <TextView
+        android:id="@+id/title_tv"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_marginTop="50dp"
+        android:gravity="center"
+        android:text="REMOTE CONTROL"
+        android:textColor="#5a7eed"
+        android:textSize="25dp"
+        android:textStyle="bold" />
+
+    <EditText
+
+        android:id="@+id/ip_edt"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:background="@drawable/border_edittext1"
+        android:inputType="number"
+        android:digits="0123456789."
+        android:textSize="25dp" />
+
+
+    <EditText
+        android:id="@+id/pass_edt"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/border_edittext1"
+        android:inputType="number"
+        android:textSize="25dp" />
+
+    <Button
+        android:id="@+id/connect_btn"
+        android:layout_width="180dp"
+        android:layout_height="35dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/border_button"
+        android:text="Connect"
+        android:textColor="#ffffff" />
+
+</LinearLayout>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <Button
+        android:id="@+id/btnGPT"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="GotoGPT"
+        android:text="@string/gptb1" />
+
+    <Button
+        android:id="@+id/btnShowContact"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Contact Infor" />
+
+    <Button
+        android:id="@+id/btnGotoContactinfogetresult"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Contact Infor and Get Result" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="gotoGoogle"
+        android:text="Go to Google" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="openContact"
+        android:text="Open Contact" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="gotoSpinnerAutoComplete"
+        android:text="Spinner Auto Complete" />
+
+
+</LinearLayout>

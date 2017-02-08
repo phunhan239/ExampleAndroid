@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Equiz</string>
+    <string-array name="subject">
+        <item>Java</item>
+        <item>.NET</item>
+        <item>Python</item>
+        <item>C/C++</item>
+    </string-array>
+</resources>
